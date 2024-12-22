@@ -9,7 +9,7 @@ const cardsData = [
         image: AvantGarde,
         title:"Avant Garde Digital services Pvt. Ltd.",
         company: "Full Stack Developer",
-        content: "Designed and developed web and mobile apps, troubleshooting issues to ensure seamless functionality. Leveraged emerging technologies to deliver innovative solutions and enhance user satisfaction.",
+        content: "Designed and developed web and mobile apps,troubleshooting issues to ensure seamless functionality. Leveraged emerging technologies to deliver innovative solutions and enhance user satisfaction.",
         link: "https://www.linkedin.com/company/avant-garde-digital/",
     },
 
