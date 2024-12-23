@@ -27,7 +27,7 @@ function WhyYouShouldHireMe() {
     ];
     return (
         <>
-            <div className="pt-8">
+            <div className="py-8">
                 <div className="dark:text-white flex">
                     <MorphingText texts={texts} />
                 </div>

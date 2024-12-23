@@ -161,7 +161,7 @@ function Header() {
                         </ul> */}
                         <ul className="flex flex-col items-center space-y-4 bg-slate-200 dark:bg-slate-600 rounded-lg py-4">
             <li>
-                <NavLink
+                <NavLink to="/WorkExperience"
                     className="bg-indigo-500 dark:bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded text-sm"
                     onClick={() => setMenuOpen(false)} // Close menu on link click
                 >
@@ -170,7 +170,7 @@ function Header() {
             </li>
             <li>
                 <NavLink
-                    to="/WorkExperience"
+                    to="/Hireme"
                     className="bg-indigo-400 dark:bg-sky-400 hover:bg-blue-700 text-white font-bold py-2 px-12 rounded text-sm"
                     onClick={() => setMenuOpen(false)} // Close menu on link click
                 >
