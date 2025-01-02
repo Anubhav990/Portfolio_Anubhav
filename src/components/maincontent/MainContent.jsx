@@ -28,9 +28,9 @@ function MainContent() {
                     />
                 </div>
                 <div className="flex justify-center pt-0 space-x-4 dark:bg-gray-800">
-                    <Link to=""><button className="flex items-center px-4 py-2 bg-indigo-500 dark:bg-blue-500 text-white dark:text-white font-semibold rounded-lg shadow-md hover:bg-indigo-700 dark:hover:bg-blue-700 transition duration-300">View Resume
+                    <a href="https://drive.google.com/file/d/15ATyfKqk157ka-BOf9MAzZngKThK0UnG/view?usp=sharing" target="_blank"><button className="flex items-center px-4 py-2 bg-indigo-500 dark:bg-blue-500 text-white dark:text-white font-semibold rounded-lg shadow-md hover:bg-indigo-700 dark:hover:bg-blue-700 transition duration-300">View Resume
                     <img src={resumeIcon} className="w-6 h-6 ml-2" />
-                    </button></Link>
+                    </button></a>
                     <Link to="/Projects"><button className="flex items-center px-4 py-2 bg-indigo-500 dark:bg-blue-500 text-white dark:text-white font-semibold rounded-lg shadow-md hover:bg-indigo-700 dark:hover:bg-blue-700 transition duration-300">Projects
                     <img src={projectIcon} className="w-6 h-6 ml-2" />
                     </button></Link>
