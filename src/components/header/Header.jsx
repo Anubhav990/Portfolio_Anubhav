@@ -147,7 +147,6 @@ function Header() {
                         backgroundImage: `url(${pexels})`, // Set the cosmos stars background
                         backgroundSize: 'cover', // Make the background cover the whole drawer
                         backgroundPosition: 'center', // Center the background image
-                        overflow: 'hidden',
                     }}
                 >
                     {/* Close Icon (Top-Left) */}
