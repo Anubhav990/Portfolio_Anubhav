@@ -14,7 +14,7 @@ function MainContent() {
         <>
             <div>
                 <div className="flex flex-col items-center justify-center px-4 pt-3 md:pt-4 md:px-48 dark:bg-gray-800">
-                    <h1 className="text-3xl font-bold mb-2 md:text-[46px] leading-tight dark:text-white"><BlurIn /></h1>
+                    <h2 className="text-3xl font-bold mb-2 md:text-[46px] leading-tight dark:text-white"><BlurIn /></h2>
                     <p className="text-base text-gray-600 dark:text-white md:mt-1 mb-2 md:text-xl">
                         I am a creative software developer from India, proficient in the following tech stacks.
                     </p>
@@ -29,10 +29,10 @@ function MainContent() {
                 </div>
                 <div className="flex justify-center pt-0 space-x-4 dark:bg-gray-800">
                     <a href="https://drive.google.com/file/d/15ATyfKqk157ka-BOf9MAzZngKThK0UnG/view?usp=sharing" target="_blank"><button className="flex items-center px-4 py-2 bg-indigo-500 dark:bg-blue-500 text-white dark:text-white font-semibold rounded-lg shadow-md hover:bg-indigo-700 dark:hover:bg-blue-700 transition duration-300">View Resume
-                    <img src={resumeIcon} className="w-6 h-6 ml-2" />
+                        <img src={resumeIcon} className="w-6 h-6 ml-2" />
                     </button></a>
                     <Link to="/Projects"><button className="flex items-center px-4 py-2 bg-indigo-500 dark:bg-blue-500 text-white dark:text-white font-semibold rounded-lg shadow-md hover:bg-indigo-700 dark:hover:bg-blue-700 transition duration-300">Projects
-                    <img src={projectIcon} className="w-6 h-6 ml-2" />
+                        <img src={projectIcon} className="w-6 h-6 ml-2" />
                     </button></Link>
                 </div>
                 <Testimonials />
