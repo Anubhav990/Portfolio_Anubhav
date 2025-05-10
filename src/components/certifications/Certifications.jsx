@@ -4,6 +4,7 @@ import Certificate from '../../assets/contenticons/certificate.svg';
 import IbmPrompt from '/ibmprompteng.png';
 import IbmGit from '/ibmgithub.png';
 import IbmIntroGen from '/ibmgenintro.png';
+import pexels from '/cosmospexels.jpeg';
 
 const cardsData = [
     {
@@ -40,23 +41,63 @@ const cardsData = [
     },
 ];
 
+// const Card = ({ image, title, company, content, link }) => (
+//     <div className="flex flex-col bg-white border shadow-sm rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70 h-full"
+//         style={{
+//             backgroundImage: `url(${pexels})`, // Set the cosmos stars background
+//             backgroundSize: 'cover', // Make the background cover the whole drawer
+//             backgroundPosition: 'center', // Center the background image
+//         }}
+//     >
+//         <img className="w-full h-auto rounded-t-xl" src={image} alt={title} />
+//         <div className="flex flex-col p-4 md:p-5 flex-grow">
+//             <h3 className="text-md font-bold text-white dark:text-white text-start">{title}</h3>
+//             <h2 className="font-bold text-sky-400 dark:text-sky-400 text-lg">{company}</h2>
+//             <p className="mt-1 text-white dark:white text-start text-sm flex-grow">{content}</p>
+//         </div>
+//         <a target="_blank"
+//             className="py-2 px-3 w-full inline-flex justify-between mb-0.5 gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 focus:outline-none focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none"
+//             href={link}
+//         >
+//             <div className="flex justify-center gap-x-2 w-full">
+//                 <p>View Certificate</p>
+//                 <img className="w-5 h-5" src={Certificate} />
+//             </div>
+//         </a>
+//     </div>
+// );
+
 const Card = ({ image, title, company, content, link }) => (
-    <div className="flex flex-col bg-white border shadow-sm rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70 h-full">
-        <img className="w-full h-auto rounded-t-xl" src={image} alt={title} />
-        <div className="flex flex-col p-4 md:p-5 flex-grow">
-            <h3 className="text-md font-bold text-gray-800 dark:text-white text-start">{title}</h3>
-            <h2 className="font-bold text-sky-400 dark:text-sky-400 text-lg">{company}</h2>
-            <p className="mt-1 text-gray-500 dark:text-neutral-400 text-start text-sm flex-grow">{content}</p>
-        </div>
-        <a target="_blank"
-            className="py-2 px-3 w-full inline-flex justify-between mb-0.5 gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 focus:outline-none focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none"
-            href={link}
-        >
-            <div className="flex justify-center gap-x-2 w-full">
-                <p>View Certificate</p>
-                <img className="w-5 h-5" src={Certificate} />
+    <div className="relative flex flex-col border shadow-sm rounded-xl overflow-hidden h-full dark:border-neutral-700 dark:shadow-neutral-700/70">
+
+        {/* Background Layer */}
+        <div
+            className="absolute inset-0 bg-cover bg-center opacity-50 z-0"
+            style={{
+                backgroundImage: `url(${pexels})`,
+            }}
+        />
+
+        {/* Content Layer */}
+        <div className="relative z-10 flex flex-col h-full">
+            <img className="w-full h-auto rounded-t-xl" src={image} alt={title} />
+            <div className="flex flex-col p-4 md:p-5 flex-grow">
+                <h3 className="text-md font-bold text-white dark:text-white text-start">{title}</h3>
+                <h2 className="font-bold text-sky-400 dark:text-sky-400 text-lg">{company}</h2>
+                <p className="mt-1 text-white dark:text-gray-300 text-start text-sm flex-grow">{content}</p>
             </div>
-        </a>
+            <a
+                target="_blank"
+                rel="noopener noreferrer"
+                className="py-2 px-3 w-full inline-flex justify-between mb-0.5 gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 focus:outline-none focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none"
+                href={link}
+            >
+                <div className="flex justify-center gap-x-2 w-full">
+                    <p>View Certificate</p>
+                    <img className="w-5 h-5" src={Certificate} alt="certificate icon" />
+                </div>
+            </a>
+        </div>
     </div>
 );
 
