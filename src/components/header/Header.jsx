@@ -65,6 +65,11 @@ function Header() {
                                     Certifications
                                 </NavLink>
                             </li>
+                            <li>
+                                <NavLink to="/Projects" className="text-gray-800 dark:text-white font-semibold">
+                                    Projects
+                                </NavLink>
+                            </li>
                             <a href="https://anubhavcreates.hashnode.dev/" target="_blank">
                                 <button className="text-gray-800 dark:text-white font-semibold">Tech Blogs</button>
                             </a>
@@ -184,6 +189,13 @@ function Header() {
                         </NavLink>
                         <NavLink
                             to="/Certifications"
+                            className="text-white bg-gradient-to-r from-violet-600 to-indigo-600 px-4 py-4 rounded-lg text-lg font-semibold w-full text-center"
+                            onClick={toggleMenu}
+                        >
+                            Certifications
+                        </NavLink>
+                         <NavLink
+                            to="/Projects"
                             className="text-white bg-gradient-to-r from-violet-600 to-indigo-600 px-4 py-4 rounded-lg text-lg font-semibold w-full text-center"
                             onClick={toggleMenu}
                         >
