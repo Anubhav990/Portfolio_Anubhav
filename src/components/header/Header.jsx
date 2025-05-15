@@ -194,12 +194,12 @@ function Header() {
                         >
                             Certifications
                         </NavLink>
-                         <NavLink
+                        <NavLink
                             to="/Projects"
                             className="text-white bg-gradient-to-r from-violet-600 to-indigo-600 px-4 py-4 rounded-lg text-lg font-semibold w-full text-center"
                             onClick={toggleMenu}
                         >
-                            Certifications
+                            Projects
                         </NavLink>
                         <a
                             href="https://anubhavcreates.hashnode.dev/"
